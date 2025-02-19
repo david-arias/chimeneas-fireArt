@@ -2657,6 +2657,11 @@ body {
     font-size: 14px;
   }
 }
+@media (min-width: 0) and (max-width: 576px) {
+  body .container {
+    padding: 0 8px;
+  }
+}
 
 .headerWrap {
   background: var(--color-black);
@@ -2802,6 +2807,7 @@ body {
     padding: 0 0 0 16px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    text-align: left;
   }
 }
 .headerWrap .menu ul.nav-links li a {

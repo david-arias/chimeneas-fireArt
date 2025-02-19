@@ -7,4 +7,10 @@ body {
     @media (min-width: 0) and (max-width: 576px) {
         font-size: 14px;
     }
+
+    .container {
+        @media (min-width: 0) and (max-width: 576px) {
+            padding: 0 8px;
+        }
+    }
 }
