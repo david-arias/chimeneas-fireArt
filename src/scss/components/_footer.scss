@@ -1,0 +1,118 @@
+footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 24px 0;
+    text-align: center;
+
+    h5 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .footer-left {
+        p {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: 16px 0 0 0;
+
+            i {
+                margin: 0 8px 0 0;
+                width: 24px;
+                height: auto;
+                font-size: 24px;
+            }
+
+            &.footIcon-mail {
+                i {
+                    color: #25CAD6;
+                }
+            }
+
+            &.footIcon-phone {
+                i {
+                    color: #41568a;
+                }
+            }
+
+            &.footIcon-insta {
+                i {
+                    color: #d6249f;
+                }
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        @media (min-width: 0) and (max-width: 576px) {
+            margin: 32px 0;
+
+            img {
+                width: 80px;
+                height: auto;
+            }
+        }
+    }
+
+    .socialBtns {
+        display: flex;
+        justify-content: center;
+
+        .socialItem {
+            margin: 16px;
+            background: var(--color-white);
+            box-sizing: border-box;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+
+            a {
+                display: inline-flex;
+                width: 45px;
+                height: 45px;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-black);
+
+                i {
+                    padding: 0;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 24px;
+                }
+            }
+
+        }
+    }
+
+    .footer-right {
+        p {
+            &.footIcon-dir {
+                font-size: 1.4rem;
+                margin: 0;
+            }
+
+            &.footIcon-city {
+                font-size: 0.8rem;
+                margin: 0;
+            }
+
+            &.footIcon-badge {
+                font-size: 1rem;
+                margin: 16px 0;
+                background: var(--color-red);
+                color: white;
+                font-weight: 700;
+                padding: 8px 16px;
+                border-radius: 8px;
+                display: inline-block;
+            }
+        }
+    }
+}

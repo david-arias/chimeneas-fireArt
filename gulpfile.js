@@ -25,23 +25,23 @@ const log = console.log;
 // = = = = = = = = = = 
 
 // Default
-gulp.task('default', function() {
-    return new Promise( function(resolve, reject){
+gulp.task('default', function () {
+    return new Promise(function (resolve, reject) {
         log(color('= = = = Hola GULP = = = =', 'RED'));
         resolve();
-    } )
+    })
 });
 
 // HTML
-gulp.task('html', function() {
+gulp.task('html', function () {
     log(color('= = = = Watch HTML changes = = = =', 'YELLOW'));
 
     return gulp.src('./src/*.html')
-        .pipe( gulp.dest('./app/') );
+        .pipe(gulp.dest('./app/'));
 })
 
 // CSS - SASS 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     log(color('= = = = Watch SASS changes = = = =', 'GREEN'));
 
     return gulp.src('./src/scss/**/*.scss')
@@ -59,18 +59,18 @@ gulp.task('sass', function() {
 })
 
 // JS
-gulp.task('js', function() {
+gulp.task('js', function () {
     log(color('= = = = Watch JS changes = = = =', 'MAGENTA'));
 
     return gulp.src('./src/js/**/*.js')
         .pipe(concat('app.js'))
-        .pipe( gulp.dest('./app/js/') );
+        .pipe(gulp.dest('./app/js/'));
 })
 
 // = = = = = = = = = = 
 // SERVE TASKS
 // = = = = = = = = = = 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
     log(color('= = = = START SERVE = = = =', 'GREEN'));
 
     // => Browser sync

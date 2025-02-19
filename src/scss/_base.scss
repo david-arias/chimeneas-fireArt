@@ -1,0 +1,10 @@
+body {
+    /* font-family: "Lato", serif; */
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    @media (min-width: 0) and (max-width: 576px) {
+        font-size: 14px;
+    }
+}

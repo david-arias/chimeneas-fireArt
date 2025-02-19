@@ -1,13 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chimeneas - Fire Art</title>
+
+    <link rel="icon" type="neandertal" href="imgs/logo_ico.ico">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header class="headerWrap" id="js-headerWrap">
+        <div class="mobileMenu display-md-down">
+            <button id="js_mobileMenu-open"><i class="fi fi-menu"></i></button>
+        </div>
+        <div class="mainLogo">
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/fireArt_logo.png" class="img-logo" />
+            </a>
+        </div>
+        <div class="menu" id='js-menu'>
+            <div class="mobilelogo display-md-down">
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/fireArt_logo.png" class="img-logo" />
+                </a>
+            </div>
+            <div class="mobileMenuClose display-md-down">
+                <button id="js_mobileMenu-close"><i class="fi fi-x"></i></button>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a class="active" href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li id='js-ddList_prod'>
+                    <a href="#" id='js-ddMenu_prod'>Productos <i class="fi fi-chevron-down"></i></a>
+
+                    <ul class="subnav-links">
+                        <li>
+                            <a href="#">Colgantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Piso y pared</a>
+                        </li>
+                        <li>
+                            <a href="#">De exterior</a>
+                        </li>
+                        <li>
+                            <a href="#">Piezas únicas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Galeria de Arte</a>
+                </li>
+                <li>
+                    <a href="#">Contactanos</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- //HEADER -->
+
+    <!-- HOME CONTENT -->
+    <div class="carousel">
+        <div class="owl-carousel owl-theme">
+            <div class='item'>
+                <picture>
+                    <source srcset="imgs/home/carousel/slideBanner_sm_1.jpg" media="(max-width: 576px)" />
+                    <img src="imgs/home/carousel/slideBanner_lg_1.jpg" alt="MDN" />
+                </picture>
+            </div>
+            <div class='item'>
+                <picture>
+                    <source srcset="imgs/home/carousel/slideBanner_sm_2.jpg" media="(max-width: 576px)" />
+                    <img src="imgs/home/carousel/slideBanner_lg_2.jpg" alt="MDN" />
+                </picture>
+            </div>
+            <div class='item'>
+                <picture>
+                    <source srcset="imgs/home/carousel/slideBanner_sm_3.jpg" media="(max-width: 576px)" />
+                    <img src="imgs/home/carousel/slideBanner_lg_3.jpg" alt="MDN" />
+                </picture>
+            </div>
+            <div class='item'>
+                <picture>
+                    <source srcset="imgs/home/carousel/slideBanner_sm_4.jpg" media="(max-width: 576px)" />
+                    <img src="imgs/home/carousel/slideBanner_lg_4.jpg" alt="MDN" />
+                </picture>
+            </div>
+            <div class='item'>
+                <picture>
+                    <source srcset="imgs/home/carousel/slideBanner_sm_5.jpg" media="(max-width: 576px)" />
+                    <img src="imgs/home/carousel/slideBanner_lg_5.jpg" alt="MDN" />
+                </picture>
+            </div>
+        </div>
+    </div>
+    <!-- mid text -->
+    <div class="fireart-textWrap">
+        <div class="container">
+            <div class="row">
+                <div class="col_lg_2 col_sm_12">
+                    <div class="fireart-logo">
+                        <img src="imgs/fenix_fireArt.png" alt="Logo Fénix" />
+                    </div>
+                </div>
+                <div class="col_lg_10 col_sm_12">
+                    <div class="fireart-text">
+                        <p>En Fire Art la magia del fuego se convierte en arte, llevando calidez y experiencias unicas a
+                            tu hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sections -->
+    <!-- colgantes -->
+    <section class='sec-chimeneas'>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <div class="video-wrap">
+                    <video controls preload="metadata" playsinline muted autoplay loop>
+                        <source src="videos/chimeneas_colgantes.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="textInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col_lg_12">
+                        <div class="topText">
+                            <h3>CHIMENEAS <span class="colgantes">COLGANTES</span></h3>
+                            <div class="labels">Leña Gas Etanol</div>
+                        </div>
+                        <div class="midText">
+                            <p>Estas chimeneas de estilo suspendido combinan modernidad y sofisticacion en un diseño
+                                minimalista y escultorico transformando cualquier espacio en un ambiente unico y con
+                                distincion. Tienen una alta eficiencia calorifica brindando confort y elegancia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/colgantes/sirius_fuego.jpg" alt="" />
+                                    <p>OVNI</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/colgantes/ovni_fuego.jpg" alt="" />
+                                    <p>ASTRAL</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/colgantes/elipse_fuego.jpg" alt="" />
+                                    <p>SIRIUS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/colgantes/astral_fuego.jpg" alt="" />
+                                    <p>ELIPSE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- piso pared -->
+    <section class='sec-chimeneas'>
+        <div class="img-wrapper">
+            <div class="img-container">
+                <div class="img-wrap">
+                    <picture>
+                        <source srcset="imgs/home/pisoPared/piso_pared-sm.jpg" media="(max-width: 576px)" />
+                        <img src="imgs/home/pisoPared/piso_pared.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="textInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col_lg_12">
+                        <div class="topText">
+                            <h3>CHIMENEAS <span class="colgantes">PISO Y PARED</span></h3>
+                            <div class="labels">Gas Etanol</div>
+                        </div>
+                        <div class="midText">
+                            <p>Nuestras chimeneas de piso y pared son diseños propios de Fire Art que combinan arte y
+                                funcionalidad logrando una optima refracción de calor que se adaptan a todo tipo de
+                                espacio, convirtiendo ambientes con estilo exclusivo y acogedor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/pisoPared/Zenit.jpg" alt="" />
+                                    <p>ECLIPSE PARED</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/pisoPared/eclipse_pared.jpg" alt="" />
+                                    <p>ZENIT</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/pisoPared/eclipse_piso.jpg" alt="" />
+                                    <p>MINI OVNI</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/pisoPared/miniOvni.jpg" alt="" />
+                                    <p>ECLIPSE PISO</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- exteriores -->
+    <section class='sec-chimeneas'>
+        <div class="img-wrapper">
+            <div class="img-container">
+                <div class="img-wrap">
+                    <picture>
+                        <source srcset="imgs/home/exterior/chimeneas_exterior.jpg" media="(max-width: 576px)" />
+                        <img src="imgs/home/exterior/chimeneas_exterior.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="textInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col_lg_12">
+                        <div class="topText">
+                            <h3>CHIMENEAS <span class="colgantes">DE EXTERIOR</span></h3>
+                            <div class="labels">Leña Gas</div>
+                        </div>
+                        <div class="midText">
+                            <p>Las chimeneas de exterior de Fire Art combinan calidez, diseño exclusivo y funcionalidad
+                                logrando ambientar cualquier terraza o jardín. Ya sea con leña o con gas, nuestros
+                                modelos son versátiles ya que sirven como fogata o para preparar un delicioso asado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/exterior/meridianos.jpg" alt="" />
+                                    <p>MERIDIANOS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/exterior/ancestral.jpg" alt="" />
+                                    <p>FUEGO ANCESTRAL</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/exterior/mesa_fuego.jpg" alt="" />
+                                    <p>MESA DE FUEGO</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/exterior/orbe.jpg" alt="" />
+                                    <p>ORBE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- piezas unicas -->
+    <section class='sec-chimeneas'>
+        <div class="img-wrapper">
+            <div class="img-container">
+                <div class="img-wrap">
+                    <picture>
+                        <source srcset={piezas_unicas} media="(max-width: 576px)" />
+                        <img src="imgs/home/piezas_unicas/piezas_unicas.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="textInfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col_lg_12">
+                        <div class="topText">
+                            <h3>NUESTRAS <span class="colgantes">PIEZAS UNICAS</span></h3>
+                            <div class="labels">Leña Gas Etanol</div>
+                        </div>
+                        <div class="midText">
+                            <p>Estas piezas tienen un valor diferencial por ser únicas y con personalidad teniendo un
+                                carácter escultórico. Son obras de arte funcionales acompañadas por la magia del fuego y
+                                su calor, ideal para los amantes del arte y la creatividad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/piezas_unicas/aqua_fire.jpg" alt="" />
+                                    <p>AQUA</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/piezas_unicas/esferika.jpg" alt="" />
+                                    <p>ESFERIKA</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/piezas_unicas/loto.jpg" alt="" />
+                                    <p>LOTO</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_lg_3 col_xs_6">
+                            <div class="card">
+                                <a href="">
+                                    <img src="imgs/home/piezas_unicas/mariposas.jpg" alt="" />
+                                    <p>MARIPOSAS</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /HOME CONTENT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footWrap container">
+            <div class="row">
+                <div class="col_lg_4">
+                    <div class="footer-left">
+                        <h5>Contáctanos</h5>
+                        <p class='footIcon-mail'>
+                            <i class="fi fi-mail"></i> <span>fireart.co@gmail.com</span>
+                        </p>
+                        <p class='footIcon-phone'>
+                            <i class="fi fi-phone"></i> <span>3204253216</span>
+                        </p>
+                        <p class='footIcon-insta'>
+                            <i class="fi fi-instagram"></i> <span>@fireart.colombia</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col_lg_4">
+                    <div class="logo">
+                        <img src="imgs/fenix_fireArt.png" alt="Logo Ave Fénix" />
+                    </div>
+                    <div class="socialBtns">
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_lg_4">
+                    <div class="footer-right">
+                        <h5>Visítanos</h5>
+                        <p>Galería Casa Fénix</p>
+                        <p class='footIcon-dir'>Cr 6 No.149-87</p>
+                        <p class='footIcon-city'>Bogotá, Colombia</p>
+                        <p class='footIcon-badge'>Cita Previa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //FOOTER -->
+
+
 </body>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- owl carousel -->
+<script src="scripts/owlCarousel/dist/owl.carousel.min.js"></script>
+
+<script src="js/app.js"></script>
+
 </html>

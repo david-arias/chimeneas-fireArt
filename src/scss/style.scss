@@ -1,0 +1,23 @@
+// BASE
+@use "./reset";
+@use "./shrink";
+
+// SCRIPTS
+@use "./scripts/owlCarr";
+@use "./scripts/owlCarrTheme";
+
+// ICONS
+@use "./fi-icons";
+
+// VARS
+@use "./vars";
+@use "./base";
+
+
+// Components
+@use "./components/header";
+@use "./components/footer";
+
+// PAGES
+// home
+@use "./pages/home";

@@ -1,0 +1,382 @@
+/*--------------------------------
+
+icons-fireArt icon font
+Generated using nucleoapp.com
+
+-------------------------------- */
+
+$fi-font-path: "../fonts" !default;
+
+@font-face {
+  font-family: 'icons-fireArt';
+  src: url('#{$fi-font-path}/icons-fireArt.eot');
+  src: url('#{$fi-font-path}/icons-fireArt.eot') format('embedded-opentype'),
+       url('#{$fi-font-path}/icons-fireArt.woff2') format('woff2'),
+       url('#{$fi-font-path}/icons-fireArt.woff') format('woff'),
+       url('#{$fi-font-path}/icons-fireArt.ttf') format('truetype'),
+       url('#{$fi-font-path}/icons-fireArt.svg') format('svg');
+}
+
+/* base class */
+.fi {
+  display: inline-block;
+  font: normal normal normal 1em/1 'icons-fireArt';
+  color: inherit;
+  flex-shrink: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* size examples - relative units */
+.fi-sm {
+  font-size: 0.8em;
+}
+
+.fi-lg {
+  font-size: 1.2em;
+}
+
+/* size examples - absolute units */
+.fi-16 {
+  font-size: 16px;
+}
+
+.fi-32 {
+  font-size: 32px;
+}
+
+/* rotate the icon infinitely */
+.fi-is-spinning {
+  animation: fi-spin 1s infinite linear;
+}
+
+@keyframes fi-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* transform */
+.fi-rotate-90  {
+	transform: rotate(90deg);
+}
+
+.fi-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.fi-rotate-270 {
+	transform: rotate(270deg);
+}
+
+.fi-flip-y {
+	transform: scaleY(-1);
+}
+
+.fi-flip-x {
+	transform: scaleX(-1);
+}
+
+/* icons */
+$icons: (
+  'activity': 'ea01',
+  'airplay': 'ea02',
+  'alert-circle': 'ea03',
+  'alert-octagon': 'ea04',
+  'alert-triangle': 'ea05',
+  'align-center': 'ea06',
+  'align-justify': 'ea07',
+  'align-left': 'ea08',
+  'align-right': 'ea09',
+  'anchor': 'ea0a',
+  'aperture': 'ea0b',
+  'archive': 'ea0c',
+  'arrow-down': 'ea0d',
+  'arrow-down-circle': 'ea0e',
+  'arrow-down-left': 'ea0f',
+  'arrow-down-right': 'ea10',
+  'arrow-left': 'ea11',
+  'arrow-left-circle': 'ea12',
+  'arrow-right': 'ea13',
+  'arrow-right-circle': 'ea14',
+  'arrow-up': 'ea15',
+  'arrow-up-circle': 'ea16',
+  'arrow-up-left': 'ea17',
+  'arrow-up-right': 'ea18',
+  'at-sign': 'ea19',
+  'award': 'ea1a',
+  'bar-chart': 'ea1b',
+  'bar-chart-2': 'ea1c',
+  'battery': 'ea1d',
+  'battery-charging': 'ea1e',
+  'bell': 'ea1f',
+  'bell-off': 'ea20',
+  'bluetooth': 'ea21',
+  'bold': 'ea22',
+  'book': 'ea23',
+  'book-open': 'ea24',
+  'bookmark': 'ea25',
+  'box': 'ea26',
+  'briefcase': 'ea27',
+  'calendar': 'ea28',
+  'camera': 'ea29',
+  'camera-off': 'ea2a',
+  'cast': 'ea2b',
+  'check': 'ea2c',
+  'check-circle': 'ea2d',
+  'check-square': 'ea2e',
+  'chevron-down': 'ea2f',
+  'chevron-left': 'ea30',
+  'chevron-right': 'ea31',
+  'chevron-up': 'ea32',
+  'chevrons-down': 'ea33',
+  'chevrons-left': 'ea34',
+  'chevrons-right': 'ea35',
+  'chevrons-up': 'ea36',
+  'chrome': 'ea37',
+  'circle': 'ea38',
+  'clipboard': 'ea39',
+  'clock': 'ea3a',
+  'cloud': 'ea3b',
+  'cloud-drizzle': 'ea3c',
+  'cloud-lightning': 'ea3d',
+  'cloud-off': 'ea3e',
+  'cloud-rain': 'ea3f',
+  'cloud-snow': 'ea40',
+  'code': 'ea41',
+  'codepen': 'ea42',
+  'codesandbox': 'ea43',
+  'coffee': 'ea44',
+  'columns': 'ea45',
+  'command': 'ea46',
+  'compass': 'ea47',
+  'copy': 'ea48',
+  'corner-down-left': 'ea49',
+  'corner-down-right': 'ea4a',
+  'corner-left-down': 'ea4b',
+  'corner-left-up': 'ea4c',
+  'corner-right-down': 'ea4d',
+  'corner-right-up': 'ea4e',
+  'corner-up-left': 'ea4f',
+  'corner-up-right': 'ea50',
+  'cpu': 'ea51',
+  'credit-card': 'ea52',
+  'crop': 'ea53',
+  'crosshair': 'ea54',
+  'database': 'ea55',
+  'delete': 'ea56',
+  'disc': 'ea57',
+  'divide': 'ea58',
+  'divide-circle': 'ea59',
+  'divide-square': 'ea5a',
+  'dollar-sign': 'ea5b',
+  'download': 'ea5c',
+  'download-cloud': 'ea5d',
+  'dribbble': 'ea5e',
+  'droplet': 'ea5f',
+  'edit': 'ea60',
+  'edit-2': 'ea61',
+  'edit-3': 'ea62',
+  'external-link': 'ea63',
+  'eye': 'ea64',
+  'eye-off': 'ea65',
+  'facebook': 'ea66',
+  'fast-forward': 'ea67',
+  'feather': 'ea68',
+  'figma': 'ea69',
+  'file': 'ea6a',
+  'file-minus': 'ea6b',
+  'file-plus': 'ea6c',
+  'file-text': 'ea6d',
+  'film': 'ea6e',
+  'filter': 'ea6f',
+  'flag': 'ea70',
+  'folder': 'ea71',
+  'folder-minus': 'ea72',
+  'folder-plus': 'ea73',
+  'framer': 'ea74',
+  'frown': 'ea75',
+  'gift': 'ea76',
+  'git-branch': 'ea77',
+  'git-commit': 'ea78',
+  'git-merge': 'ea79',
+  'git-pull-request': 'ea7a',
+  'github': 'ea7b',
+  'gitlab': 'ea7c',
+  'globe': 'ea7d',
+  'grid': 'ea7e',
+  'hard-drive': 'ea7f',
+  'hash': 'ea80',
+  'headphones': 'ea81',
+  'heart': 'ea82',
+  'help-circle': 'ea83',
+  'hexagon': 'ea84',
+  'home': 'ea85',
+  'image': 'ea86',
+  'inbox': 'ea87',
+  'info': 'ea88',
+  'instagram': 'ea89',
+  'italic': 'ea8a',
+  'key': 'ea8b',
+  'layers': 'ea8c',
+  'layout': 'ea8d',
+  'life-buoy': 'ea8e',
+  'link': 'ea8f',
+  'link-2': 'ea90',
+  'linkedin': 'ea91',
+  'list': 'ea92',
+  'loader': 'ea93',
+  'lock': 'ea94',
+  'log-in': 'ea95',
+  'log-out': 'ea96',
+  'mail': 'ea97',
+  'map': 'ea98',
+  'map-pin': 'ea99',
+  'maximize': 'ea9a',
+  'maximize-2': 'ea9b',
+  'meh': 'ea9c',
+  'menu': 'ea9d',
+  'message-circle': 'ea9e',
+  'message-square': 'ea9f',
+  'mic': 'eaa0',
+  'mic-off': 'eaa1',
+  'minimize': 'eaa2',
+  'minimize-2': 'eaa3',
+  'minus': 'eaa4',
+  'minus-circle': 'eaa5',
+  'minus-square': 'eaa6',
+  'monitor': 'eaa7',
+  'moon': 'eaa8',
+  'more-horizontal': 'eaa9',
+  'more-vertical': 'eaaa',
+  'mouse-pointer': 'eaab',
+  'move': 'eaac',
+  'music': 'eaad',
+  'navigation': 'eaae',
+  'navigation-2': 'eaaf',
+  'octagon': 'eab0',
+  'package': 'eab1',
+  'paperclip': 'eab2',
+  'pause': 'eab3',
+  'pause-circle': 'eab4',
+  'pen-tool': 'eab5',
+  'percent': 'eab6',
+  'phone': 'eab7',
+  'phone-call': 'eab8',
+  'phone-forwarded': 'eab9',
+  'phone-incoming': 'eaba',
+  'phone-missed': 'eabb',
+  'phone-off': 'eabc',
+  'phone-outgoing': 'eabd',
+  'pie-chart': 'eabe',
+  'play': 'eabf',
+  'play-circle': 'eac0',
+  'plus': 'eac1',
+  'plus-circle': 'eac2',
+  'plus-square': 'eac3',
+  'pocket': 'eac4',
+  'power': 'eac5',
+  'printer': 'eac6',
+  'radio': 'eac7',
+  'refresh-ccw': 'eac8',
+  'refresh-cw': 'eac9',
+  'repeat': 'eaca',
+  'rewind': 'eacb',
+  'rotate-ccw': 'eacc',
+  'rotate-cw': 'eacd',
+  'rss': 'eace',
+  'save': 'eacf',
+  'scissors': 'ead0',
+  'search': 'ead1',
+  'send': 'ead2',
+  'server': 'ead3',
+  'settings': 'ead4',
+  'share': 'ead5',
+  'share-2': 'ead6',
+  'shield': 'ead7',
+  'shield-off': 'ead8',
+  'shopping-bag': 'ead9',
+  'shopping-cart': 'eada',
+  'shuffle': 'eadb',
+  'sidebar': 'eadc',
+  'skip-back': 'eadd',
+  'skip-forward': 'eade',
+  'slack': 'eadf',
+  'slash': 'eae0',
+  'sliders': 'eae1',
+  'smartphone': 'eae2',
+  'smile': 'eae3',
+  'speaker': 'eae4',
+  'square': 'eae5',
+  'star': 'eae6',
+  'stop-circle': 'eae7',
+  'sun': 'eae8',
+  'sunrise': 'eae9',
+  'sunset': 'eaea',
+  'table': 'eaeb',
+  'tablet': 'eaec',
+  'tag': 'eaed',
+  'target': 'eaee',
+  'terminal': 'eaef',
+  'thermometer': 'eaf0',
+  'thumbs-down': 'eaf1',
+  'thumbs-up': 'eaf2',
+  'toggle-left': 'eaf3',
+  'toggle-right': 'eaf4',
+  'tool': 'eaf5',
+  'trash': 'eaf6',
+  'trash-2': 'eaf7',
+  'trello': 'eaf8',
+  'trending-down': 'eaf9',
+  'trending-up': 'eafa',
+  'triangle': 'eafb',
+  'truck': 'eafc',
+  'tv': 'eafd',
+  'twitch': 'eafe',
+  'twitter': 'eaff',
+  'type': 'eb00',
+  'umbrella': 'eb01',
+  'underline': 'eb02',
+  'unlock': 'eb03',
+  'upload': 'eb04',
+  'upload-cloud': 'eb05',
+  'user': 'eb06',
+  'user-check': 'eb07',
+  'user-minus': 'eb08',
+  'user-plus': 'eb09',
+  'user-x': 'eb0a',
+  'users': 'eb0b',
+  'video': 'eb0c',
+  'video-off': 'eb0d',
+  'voicemail': 'eb0e',
+  'volume': 'eb0f',
+  'volume-1': 'eb10',
+  'volume-2': 'eb11',
+  'volume-x': 'eb12',
+  'watch': 'eb13',
+  'wifi': 'eb14',
+  'wifi-off': 'eb15',
+  'wind': 'eb16',
+  'x': 'eb17',
+  'x-circle': 'eb18',
+  'x-octagon': 'eb19',
+  'x-square': 'eb1a',
+  'youtube': 'eb1b',
+  'zap': 'eb1c',
+  'zap-off': 'eb1d',
+  'zoom-in': 'eb1e',
+  'zoom-out': 'eb1f',
+);
+
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+@each $name, $code in $icons {
+  .fi-#{""+$name}::before {
+    content: unicode($code);
+  }
+}
