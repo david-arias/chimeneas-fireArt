@@ -54,6 +54,7 @@
         img {
             width: 90px;
             height: 90px;
+            margin: auto;
 
             @media (min-width: 0) and (max-width: 576px) {
                 width: 50px;

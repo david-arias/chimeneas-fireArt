@@ -3055,6 +3055,7 @@ footer .footer-right p.footIcon-badge {
 .home-fireart-textWrap .fireart-logo img {
   width: 90px;
   height: 90px;
+  margin: auto;
 }
 @media (min-width: 0) and (max-width: 576px) {
   .home-fireart-textWrap .fireart-logo img {

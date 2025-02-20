@@ -95,7 +95,7 @@ $('.owl-carousel-nosotros').owlCarousel({
 
 // galeria carousel
 $('.owl-carousel-galeria').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 40,
     stagePadding: 80,
     nav: true,
