@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 100;
+    z-index: 10000;
     width: 100%;
 
     @media (min-width: 0) and (max-width: 576px) {
         flex-wrap: nowrap;
         position: relative;
-        z-index: 100;
+        z-index: 10000;
         width: 100%;
 
         .mobileMenu {
@@ -38,6 +38,7 @@
         a {
             img {
                 width: 180px;
+                margin: auto;
 
                 @media (min-width: 0) and (max-width: 576px) {
                     width: 130px;

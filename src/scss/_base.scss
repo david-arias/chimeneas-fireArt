@@ -3,6 +3,7 @@ body {
     font-family: "Montserrat", serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 1.5;
 
     @media (min-width: 0) and (max-width: 576px) {
         font-size: 14px;
@@ -13,4 +14,8 @@ body {
             padding: 0 8px;
         }
     }
+}
+
+img {
+    display: block;
 }

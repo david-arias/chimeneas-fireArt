@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimeneas - Fire Art</title>
+
+    <link rel="icon" type="neandertal" href="imgs/logo_ico.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="scripts/leaflet/leaflet.css" rel="stylesheet">
+    <script src="scripts/leaflet/leaflet.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="headerWrap" id="js-headerWrap">
+        <div class="mobileMenu display-md-down">
+            <button id="js_mobileMenu-open"><i class="fi fi-menu"></i></button>
+        </div>
+        <div class="mainLogo">
+            <a class="navbar-brand" href="/">
+                <img src="./imgs/fireArt_logo.png" class="img-logo" />
+            </a>
+        </div>
+        <div class="menu" id='js-menu'>
+            <div class="mobilelogo display-md-down">
+                <a class="navbar-brand" href="/">
+                    <img src="./imgs/fireArt_logo.png" class="img-logo" />
+                </a>
+            </div>
+            <div class="mobileMenuClose display-md-down">
+                <button id="js_mobileMenu-close"><i class="fi fi-x"></i></button>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a class="active" href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/nosotros.html">Nosotros</a>
+                </li>
+                <li id='js-ddList_prod'>
+                    <a href="/productos.html" id='js-ddMenu_prod'>Productos <i class="fi fi-chevron-down"></i></a>
+
+                    <ul class="subnav-links">
+                        <li>
+                            <a href="#">Colgantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Piso y pared</a>
+                        </li>
+                        <li>
+                            <a href="#">De exterior</a>
+                        </li>
+                        <li>
+                            <a href="#">Piezas únicas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/galeria-de-arte.html">Galeria de Arte</a>
+                </li>
+                <li>
+                    <a href="/contactenos.html">Contactanos</a>
+                </li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- //HEADER -->
+
+    <!-- /////////// -->
+    <div class="contact-MainBanner">
+        <div class="video-wrapper fuego">
+            <div class="video-container">
+                <div class="video-wrap">
+                    <video preload="metadata" playsinline muted autoplay loop>
+                        <source src="/imgs/nosotros/nosotros_fuego.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-logo">
+        <div class="logo">
+            <img src="imgs/fireArt_logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="container">
+            <div class="row align_center">
+                <div class="col_lg_6">
+                    <div class="textWrap">
+                        <div class="text">
+                            <h1>Galeria Casa Fenix</h1>
+                            <p class="dir">Cr 6 No. 149-87</p>
+                            <p class="place">Bosque de pinos</p>
+                            <p class="city">Bogotá - Colombia</p>
+
+                            <h2>Cita Previa</h2>
+                            <p class="phone"><i class="fi fi-phone"></i> <span>3204253216</span></p>
+                            <p class="name">Juanita garcia</p>
+                        </div>
+                        <div class="text text-info">
+                            <h3>Informacion y ventas</h3>
+                            <div>
+                                <p><i class="fi fi-phone"></i><span>3204253216</span></p>
+                            </div>
+                            <div>
+                                <p><i class="fi fi-mail"></i><span>fireart.co@gmail.com</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_lg_6">
+                    <div class="mapWrap">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="noso-MainBanner">
+        <div class="img-wrapper">
+            <picture>
+                <source srcset="imgs/contacto/galeria_casa_fenix.jpg" media="(max-width: 576px)" />
+                <img src="imgs/contacto/galeria_casa_fenix.jpg" alt="MDN" />
+            </picture>
+        </div>
+    </div>
+    <!-- /////////// -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footWrap container">
+            <div class="row">
+                <div class="col_lg_4">
+                    <div class="footer-left">
+                        <h5>Contáctanos</h5>
+                        <p class='footIcon-mail'>
+                            <i class="fi fi-mail"></i> <span>fireart.co@gmail.com</span>
+                        </p>
+                        <p class='footIcon-phone'>
+                            <i class="fi fi-phone"></i> <span>3204253216</span>
+                        </p>
+                        <p class='footIcon-insta'>
+                            <i class="fi fi-instagram"></i> <span>@fireart.colombia</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col_lg_4">
+                    <div class="logo">
+                        <img src="imgs/fenix_fireArt.png" alt="Logo Ave Fénix" />
+                    </div>
+                    <div class="socialBtns">
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="socialItem">
+                            <a href="">
+                                <i class="fi fi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_lg_4">
+                    <div class="footer-right">
+                        <h5>Visítanos</h5>
+                        <p>Galería Casa Fénix</p>
+                        <p class='footIcon-dir'>Cr 6 No.149-87</p>
+                        <p class='footIcon-city'>Bogotá, Colombia</p>
+                        <p class='footIcon-badge'>Cita Previa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //FOOTER -->
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- owl carousel -->
+<script src="scripts/owlCarousel/owl.carousel.min.js"></script>
+
+<script src="js/app.js"></script>
+
+<script>
+    // CONTACT PAGE
+
+    // map
+    // initialize the map on the "map" div with a given center and zoom
+    var map = L.map('map', {
+        center: [4.7240847, -74.0232601],
+        zoom: 16
+    });
+    var marker = L.marker([4.7240847, -74.0232601]).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+</script>
+
+</html>

@@ -47,12 +47,91 @@ prodBtn.addEventListener("click", (e) => {
 })
 
 
+// HOME PAGE
 
 // Home carousel
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel-home').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
     items: 1,
-    dots: false
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000
+})
+
+// NOSOTROS PAGE
+
+// noso carousel
+$('.owl-carousel-nosotros').owlCarousel({
+    loop: false,
+    margin: 40,
+    stagePadding: 80,
+    nav: true,
+    items: 3,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+        // breakpoint from 0 up
+        0: {
+            items: 1,
+            margin: 120,
+        },
+        // breakpoint from 480 up
+        480: {
+            items: 3,
+            margin: 40,
+        },
+        // breakpoint from 768 up
+        768: {
+            nav: true,
+            margin: 40,
+        }
+    }
+})
+
+// GALERIA PAGE
+
+// galeria carousel
+$('.owl-carousel-galeria').owlCarousel({
+    loop: false,
+    margin: 40,
+    stagePadding: 80,
+    nav: true,
+    items: 4,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+        // breakpoint from 0 up
+        0: {
+            items: 1,
+            margin: 120,
+        },
+        // breakpoint from 480 up
+        480: {
+            items: 3,
+            margin: 40,
+        },
+        // breakpoint from 768 up
+        768: {
+            nav: true,
+            margin: 40,
+        }
+    }
+})
+
+
+// BLOG PAGE
+
+// blog carousel
+$('.owl-carousel-blog').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    items: 1,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000
 })

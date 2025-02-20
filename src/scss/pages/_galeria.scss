@@ -1,0 +1,94 @@
+// main banner
+.galeria-MainBanner {
+
+    /* Video */
+    .video-wrapper {
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        &.fuego {
+            height: 250px;
+            overflow: hidden;
+
+            video {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                /* or object-fit: contain; */
+            }
+        }
+    }
+
+    /* IMAGE */
+    .img-wrapper {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+// text
+.galeria-maintext {
+    padding: 24px 0 24px 0;
+
+    .topText {
+        text-align: center;
+
+        h1 {
+            font-size: 1.8rem;
+
+            @media (min-width: 0) and (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// persona
+.galeria-person {
+    background-color: var(--color-black);
+    padding: 24px 0;
+
+    .text {
+        color: var(--color-white);
+
+        @media (min-width: 0) and (max-width: 576px) {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+
+            @media (min-width: 0) and (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+
+            @media (min-width: 0) and (max-width: 576px) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .img {
+        img {
+            border-radius: 16px;
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+    }
+}
+
+// carousel
+.galeria-carousel {
+    padding: 24px 0;
+}

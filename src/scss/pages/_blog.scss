@@ -1,0 +1,187 @@
+.blog-carousel {
+    .item {
+        position: relative;
+
+        .text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 24px 16px;
+            background: rgba(0, 0, 0, 1) 50%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            box-sizing: border-box;
+
+            h2 {
+                font-size: 1.8rem;
+                margin: 0;
+                color: var(--color-white);
+                font-weight: 600;
+
+                @media (min-width: 0) and (max-width: 576px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0;
+                color: var(--color-white);
+
+                @media (min-width: 0) and (max-width: 576px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.blog-articles {
+    a {
+        text-decoration: none;
+        color: var(--color-black);
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 300ms linear;
+            margin: 0 0 16px 0;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    border-radius: 16px;
+                }
+            }
+
+            .text {
+                padding: 16px;
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1rem;
+
+                    &.date {
+                        font-size: 0.8rem;
+                        color: var(--color-red);
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-content {
+    .topBanner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .top-info {
+        padding: 40px 0;
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+
+            @media (min-width: 0) and (max-width: 576px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .date {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--color-red);
+            margin: 0;
+            ;
+        }
+    }
+
+    .articleWrap {
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin: 0 0 24px 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 0 0 24px 0;
+        }
+
+        img {
+            margin: 0 0 24px 0;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        ul {
+            list-style: disc;
+            margin: 0 0 24px 0;
+
+            li {
+                padding: 0 0 0 0px;
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+
+    .side {
+        .box {
+            margin: 0 0 40px 0;
+
+            .title {
+                border: thin solid var(--color-red);
+                padding: 8px;
+                text-align: center;
+                font-weight: 600;
+                border-radius: 8px;
+            }
+
+            .socialBtns {
+                display: flex;
+                justify-content: center;
+
+                .socialItem {
+                    margin: 16px;
+                    background: var(--color-white);
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+
+                    a {
+                        display: inline-flex;
+                        width: 45px;
+                        height: 45px;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--color-black);
+
+                        i {
+                            padding: 0;
+                            width: 25px;
+                            height: 25px;
+                            font-size: 24px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

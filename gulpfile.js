@@ -36,7 +36,7 @@ gulp.task('default', function () {
 gulp.task('html', function () {
     log(color('= = = = Watch HTML changes = = = =', 'YELLOW'));
 
-    return gulp.src('./src/*.html')
+    return gulp.src('./src/**/*.html')
         .pipe(gulp.dest('./app/'));
 })
 
