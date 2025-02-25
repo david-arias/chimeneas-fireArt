@@ -57,7 +57,7 @@ $('.owl-carousel-home').owlCarousel({
     items: 1,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000
+    autoplayTimeout: 3500
 })
 
 // NOSOTROS PAGE
@@ -71,12 +71,12 @@ $('.owl-carousel-nosotros').owlCarousel({
     items: 3,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3500,
     responsive: {
         // breakpoint from 0 up
         0: {
-            items: 1,
-            margin: 120,
+            items: 2,
+            margin: 60,
         },
         // breakpoint from 480 up
         480: {
@@ -135,3 +135,71 @@ $('.owl-carousel-blog').owlCarousel({
     autoplay: true,
     autoplayTimeout: 5000
 })
+
+
+// PRODUCT PAGE
+
+// Product carousel
+$('.owl-carousel-prods').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    items: 1,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000
+})
+
+let prodBtns = document.querySelectorAll(".js-typeBtn");
+prodBtns.forEach(el => {
+    el.addEventListener("click", (btn) => {
+
+        prodBtns.forEach(elem => {
+            if (elem.classList.contains('active')) {
+                elem.classList.remove('active');
+            }
+        });
+
+        el.classList.toggle("active");
+
+        let prodType = btn.target.dataset.type;
+        let prodSection = document.getElementById("js_product-section");
+
+        switch (prodType) {
+            case "chim-bioetanol":
+                if (prodSection.classList.contains('chim-gas')) {
+                    prodSection.classList.remove('chim-gas');
+                } else if (prodSection.classList.contains('chim-lena')) {
+                    prodSection.classList.remove('chim-lena');
+                }
+                prodSection.classList.add("chim-bioetanol");
+                break;
+            case "chim-gas":
+                if (prodSection.classList.contains('chim-bioetanol')) {
+                    prodSection.classList.remove('chim-bioetanol');
+                } else if (prodSection.classList.contains('chim-lena')) {
+                    prodSection.classList.remove('chim-lena');
+                }
+                prodSection.classList.add("chim-gas");
+                break;
+            case "chim-lena":
+                if (prodSection.classList.contains('chim-bioetanol')) {
+                    prodSection.classList.remove('chim-bioetanol');
+                } else if (prodSection.classList.contains('chim-gas')) {
+                    prodSection.classList.remove('chim-gas');
+                }
+                prodSection.classList.add("chim-lena");
+                break;
+
+            default:
+                if (prodSection.classList.contains('chim-bioetanol')) {
+                    prodSection.classList.remove('chim-bioetanol');
+                } else if (prodSection.classList.contains('chim-gas')) {
+                    prodSection.classList.remove('chim-gas');
+                } else if (prodSection.classList.contains('chim-lena')) {
+                    prodSection.classList.remove('chim-lena');
+                }
+                break;
+        }
+    })
+});

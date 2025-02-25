@@ -1179,50 +1179,54 @@ Generated using nucleoapp.com
   content: "\eb13";
 }
 
-.fi-wifi::before {
+.fi-whatsapp::before {
   content: "\eb14";
 }
 
-.fi-wifi-off::before {
+.fi-wifi::before {
   content: "\eb15";
 }
 
-.fi-wind::before {
+.fi-wifi-off::before {
   content: "\eb16";
 }
 
-.fi-x::before {
+.fi-wind::before {
   content: "\eb17";
 }
 
-.fi-x-circle::before {
+.fi-x::before {
   content: "\eb18";
 }
 
-.fi-x-octagon::before {
+.fi-x-circle::before {
   content: "\eb19";
 }
 
-.fi-x-square::before {
+.fi-x-octagon::before {
   content: "\eb1a";
 }
 
-.fi-youtube::before {
+.fi-x-square::before {
   content: "\eb1b";
 }
 
-.fi-zap::before {
+.fi-youtube::before {
   content: "\eb1c";
 }
 
-.fi-zap-off::before {
+.fi-zap::before {
   content: "\eb1d";
 }
 
-.fi-zoom-in::before {
+.fi-zap-off::before {
   content: "\eb1e";
 }
 
-.fi-zoom-out::before {
+.fi-zoom-in::before {
   content: "\eb1f";
+}
+
+.fi-zoom-out::before {
+  content: "\eb20";
 }

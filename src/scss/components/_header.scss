@@ -4,13 +4,12 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 10000;
+    z-index: 100;
     width: 100%;
 
     @media (min-width: 0) and (max-width: 576px) {
         flex-wrap: nowrap;
         position: relative;
-        z-index: 10000;
         width: 100%;
 
         .mobileMenu {
@@ -201,6 +200,7 @@
         position: fixed;
         width: 100%;
         flex-wrap: nowrap;
+        top: 0;
 
         .mainLogo {
             width: 120px;

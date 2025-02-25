@@ -139,7 +139,13 @@
         }
     }
 
-    #map {
-        height: 500px;
+    .mapWrap {
+        z-index: 80;
+        position: relative;
+
+        #map {
+            height: 500px;
+        }
     }
+
 }

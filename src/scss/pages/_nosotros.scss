@@ -71,7 +71,7 @@
     position: relative;
 
     @media (min-width: 0) and (max-width: 576px) {
-        padding: 440px 0 24px 0;
+        padding: 32px 0;
     }
 
     .side {
@@ -82,7 +82,7 @@
         transform: translateY(-50%);
 
         @media (min-width: 0) and (max-width: 576px) {
-            width: 45vw;
+            display: none;
         }
 
         img {
@@ -100,14 +100,26 @@
         }
     }
 
+    .sideImg {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .text {
         text-align: center;
+
+        @media (min-width: 0) and (max-width: 576px) {
+            text-align: left;
+        }
 
         h2 {
             font-size: 2.3rem;
 
             @media (min-width: 0) and (max-width: 576px) {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
+                text-align: center;
             }
         }
 
@@ -116,6 +128,7 @@
 
             @media (min-width: 0) and (max-width: 576px) {
                 font-size: 0.9rem;
+                padding: 0 0 0 16px;
             }
         }
     }
@@ -169,7 +182,7 @@
             font-size: 1.5rem;
 
             @media (min-width: 0) and (max-width: 576px) {
-                font-size: 1rem;
+                font-size: 1.3rem;
             }
         }
 
@@ -178,14 +191,14 @@
             font-weight: 700;
 
             @media (min-width: 0) and (max-width: 576px) {
-                font-size: 1.8rem;
+                font-size: 1.2rem;
             }
         }
     }
 
     .alianzas-carousel {
         background-color: var(--color-gary);
-        padding: 0 40px;
+        padding: 32px 20px;
 
         img {
             width: 200px;
@@ -193,7 +206,7 @@
             margin: auto;
 
             @media (min-width: 0) and (max-width: 576px) {
-                width: 150px;
+                width: 90px;
             }
         }
     }
