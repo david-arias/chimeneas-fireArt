@@ -26,19 +26,22 @@ footer {
 
             &.footIcon-mail {
                 i {
-                    color: #25CAD6;
+                    // color: #25CAD6;
+                    color: var(--color-red)
                 }
             }
 
             &.footIcon-phone {
                 i {
-                    color: #41568a;
+                    // color: #41568a;
+                    color: var(--color-red)
                 }
             }
 
             &.footIcon-insta {
                 i {
-                    color: #d6249f;
+                    // color: #d6249f;
+                    color: var(--color-red)
                 }
             }
         }
@@ -94,8 +97,10 @@ footer {
 
     .footer-right {
         p {
+            font-size: 1.4rem;
+
             &.footIcon-dir {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 margin: 0;
             }
 
@@ -113,6 +118,11 @@ footer {
                 padding: 8px 16px;
                 border-radius: 8px;
                 display: inline-block;
+
+                a {
+                    color: var(--color-white);
+                    text-decoration: none;
+                }
             }
         }
     }

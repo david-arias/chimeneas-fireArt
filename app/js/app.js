@@ -1,5 +1,5 @@
 
-console.log("init");
+// console.log("init");
 
 // function menu
 // scroll menu
@@ -57,7 +57,7 @@ $('.owl-carousel-home').owlCarousel({
     items: 1,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 3500
+    autoplayTimeout: 3000
 })
 
 // NOSOTROS PAGE
