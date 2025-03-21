@@ -15,6 +15,9 @@ import autoPrefixer from 'gulp-autoprefixer';
 import * as sass from "sass";
 const scss = gulpSass(sass);
 
+// IMAGES
+import image from 'gulp-image';
+
 // DEBUG
 import color from 'gulp-color';
 const log = console.log;
@@ -32,6 +35,14 @@ gulp.task('default', function () {
     })
 });
 
+
+// Images
+gulp.task('image', function () {
+    gulp.src('./src/imgs/**/*')
+        .pipe(image())
+        .pipe(gulp.dest('./app/imgs/'));
+});
+
 // HTML
 gulp.task('html', function () {
     log(color('= = = = Watch HTML changes = = = =', 'YELLOW'));
@@ -47,7 +58,7 @@ gulp.task('sass', function () {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(scss({
             /* output style : nested | compact | expanded | compressed */
-            outputStyle: 'expanded'
+            outputStyle: 'compressed'
         }))
         .pipe(autoPrefixer({
             overrideBrowserslist: ['last 5 versions'],
