@@ -102,7 +102,7 @@ $('.owl-carousel-galeria').owlCarousel({
     items: 4,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3500,
     responsive: {
         // breakpoint from 0 up
         0: {
@@ -133,7 +133,7 @@ $('.owl-carousel-blog').owlCarousel({
     items: 1,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000
+    autoplayTimeout: 3500
 })
 
 
@@ -147,7 +147,7 @@ $('.owl-carousel-prods').owlCarousel({
     items: 1,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000
+    autoplayTimeout: 3500
 })
 
 let prodBtns = document.querySelectorAll(".js-typeBtn");

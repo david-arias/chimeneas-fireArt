@@ -90,6 +90,9 @@ gulp.task('serve', function () {
     });
 
     // => html watch
+    // gulp.watch("src/imgs/**/*", gulp.series('image'));
+
+    // => html watch
     gulp.watch("src/**/*.html", gulp.series('html'));
     gulp.watch("app/**/*.html").on('change', browserSync.reload);
 
