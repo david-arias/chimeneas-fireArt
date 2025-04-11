@@ -324,6 +324,13 @@
                     }
                 }
 
+                .mid {
+                    p.comment {
+                        overflow: hidden;
+                        height: 50px;
+                    }
+                }
+
                 .bottom {
                     span {
                         display: inline-block;
